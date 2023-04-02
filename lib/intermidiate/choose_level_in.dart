@@ -14,6 +14,15 @@ class ChoiceLevel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
+        title: Text('Intermediate Level',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),),
+        centerTitle: true,
+      ),
       body: GridView.count(
         crossAxisCount: 2,
         children: [

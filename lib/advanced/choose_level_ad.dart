@@ -15,6 +15,15 @@ class SelectLevel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blueAccent,
+        title: Text('Advanced Level',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),),
+        centerTitle: true,
+      ),
       body: GridView.count(
         crossAxisCount: 2,
         children: [
